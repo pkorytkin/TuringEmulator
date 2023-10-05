@@ -23,6 +23,6 @@ jobs:
     - name: Restore dependencies
       working-directory: ./TuringEmulator Project
       run: dotnet restore
-    - name: Releas
+    - name: Release
       working-directory: ./TuringEmulator Project
       run: dotnet build --configuration Release
