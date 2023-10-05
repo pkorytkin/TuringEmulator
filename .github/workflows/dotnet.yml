@@ -21,8 +21,11 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
+      working-directory: ./TuringEmulator Project
       run: dotnet restore
     - name: Build
+      working-directory: ./TuringEmulator Project
       run: dotnet build --no-restore
     - name: Test
+      working-directory: ./TuringEmulator Project
       run: dotnet test --no-build --verbosity normal
