@@ -23,12 +23,6 @@ jobs:
     - name: Restore dependencies
       working-directory: ./TuringEmulator Project
       run: dotnet restore
-    - name: Release win-x64
+    - name: Releas
       working-directory: ./TuringEmulator Project
-      run: dotnet build --runtime win-x64 --configuration Release
-    - name: Release win-x32
-      working-directory: ./TuringEmulator Project
-      run: dotnet build --runtime win-x86 --configuration Release
-    - name: Release win-Arm
-      working-directory: ./TuringEmulator Project
-      run: dotnet build --runtime win-arm64 --configuration Release
+      run: dotnet build --configuration Release
